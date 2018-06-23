@@ -1,6 +1,6 @@
 # Webhshell Protector
 
-A small POC of a method to defend a webserver from malicious code execution originating from planted webshells
+A small POC of a technique to defend a webserver from malicious code execution originating from planted webshells
 
 ## How it works:
 1. Using winappdbg we look for a running IIS process (w3wp.exe)
@@ -10,4 +10,4 @@ A small POC of a method to defend a webserver from malicious code execution orig
 * Currently the way I'm checking if the process to be created is really naive, but it can be extended easily to include additional checks, for example a whitelist of file hashes permitted to execute from `w3wp.exe`, a check against VT, etc...
 
 ## Demo:
-![alt text](https://raw.githubusercontent.com/username/projectname/master/pics/to/poc.gif)
+![alt text](https://github.com/mkorman90/webshell-protector/raw/master/pics/poc.gif)
